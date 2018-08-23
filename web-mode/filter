@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : filter
+#key : filter
+#contributor : m-panarin
+# --
+<filter string="${1:FilterName}" name="${2:FieldName}" domain="[('$2', '${3:Operator}', ${4:Value}),$0]"/>

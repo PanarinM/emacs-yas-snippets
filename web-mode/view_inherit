@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+#name : view_inherit
+#key : view_inherit
+#contributor : m-panarin
+# --
+<record id=\"view_${1:$(replace-regexp-in-string "\\\." "_" yas-text)}_$2_$3\" model="ir.ui.view">
+  <field name="name">${1:model}.${2:viewtype}.${3:module}</field>
+  <field name="model">$1</field>
+  <field name="inherit_id" ref="$3.$1"/>
+  <field name="arch" type="xml">
+    <$2>
+      $0
+    </$2>
+  </field>
+</record>

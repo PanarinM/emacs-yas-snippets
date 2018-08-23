@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+#name : menuitem
+#key : menuitem
+#contributor : m-panarin
+# --
+<menuitem
+    id="${1:id}"
+    name="${2:id}"
+    parent="${3:parent}"
+    action="${4:action}"
+    sequence="${5:sequence}"/>

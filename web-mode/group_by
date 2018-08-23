@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : group_by
+#key : group_by
+#contributor : m-panarin
+# --
+<filter string="${1:FilterName}" name="${2:FieldName}" domain="[]" context="{'group_by': '$2'}"/>

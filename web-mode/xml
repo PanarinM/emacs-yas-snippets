@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+#name : xml
+#key : xml
+#contributor : m-panarin
+# --
+<?xml version="1.0"?>
+<odoo>
+  $0
+</odoo>

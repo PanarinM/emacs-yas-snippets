@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : field
+#key : field
+#contributor : m-panarin
+# --
+<field name="${1:FieldName}"/>

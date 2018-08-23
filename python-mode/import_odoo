@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : import_odoo
+#key : import_odoo
+#contributor : m-panarin
+# --
+
+
+from odoo import _, api, fields, models

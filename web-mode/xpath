@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : xpath
+#key : xpath
+#contributor : m-panarin
+# --
+<xpath expr="${1:expression}" position="${2:position}">
+  $0
+</xpath>

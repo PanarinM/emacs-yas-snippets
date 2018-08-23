@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+#name : act_window
+#key : act_window
+#contributor : m-panarin
+# --
+<record id=\"${2:$(replace-regexp-in-string "\\\." "_" yas-text)}_action_${3:details}\" model="ir.actions.act_window">
+  <field name="name">${1:Action name}</field>
+  <field name="res_model">${2:model.name}</field>
+  <field name="view_type">${4:form}</field>
+  <field name="view_mode">${5:tree,form}</field>
+</record>

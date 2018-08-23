@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+#name : record_rule
+#key : record_rule
+#contributor : m-panarin
+# --
+<record id="${1:$(replace-regexp-in-string "\\\ " "_" yas-text)}_${2:$(replace-regexp-in-string "\\\." "_" yas-text)}" model="ir.rule">
+    <field name="name">${1:Rule name}</field>
+    <field name="model_id" ref="${2:model.name}"/>
+    <field name="groups" eval="[(4, ref('${3:group xmlid}')),]"/>
+    <field name="perm_read" eval="${4:0}"/>
+    <field name="perm_write" eval="${5:0}"/>
+    <field name="perm_create" eval="${6:0}"/>
+    <field name="perm_unlink" eval="${7:0}"/>
+    <field name="domain_force">[('${8:name}', '${9:=}', ${10:False}), ${11:}]</field>
+</record>

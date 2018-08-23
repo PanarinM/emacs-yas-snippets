@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: model
+# key: model
+# --
+class ${1:ModelNameCamel}(models.Model):
+    _name = "${2:ModelNameDot}"
+    _inherit = "$2"
+    $0
