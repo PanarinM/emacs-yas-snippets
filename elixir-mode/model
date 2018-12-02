@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: model
+# key: model
+# --
+
+defmodule $1.$2Model do
+use $1.Web, :model
+
+    $3
+end
