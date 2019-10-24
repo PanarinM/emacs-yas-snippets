@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: view
+# key: view
+# --
+
+defmodule $1.$2View do
+use $1, :view
+
+$3
+end
